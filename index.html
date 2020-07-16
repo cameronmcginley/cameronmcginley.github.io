@@ -1,9 +1,152 @@
-<!doctype html>
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Hello</p>
-  </body>
+	<head>
+		<title>Generic Page - Industrious by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo">Cameron McGinley</a>
+				<a class="headerlink chosen" href="index.html">Home</a>
+				<!-- <a class="headerlink" href="#">Elements</a>
+				<a class="headerlink" href="#">Generic</a> -->
+				<a class="theme" onclick="myFunction()"></a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<!-- <li><a href="#">Elements</a></li>
+					<li><a href="#">Generic</a></li>--> 
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Test</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+			
+				<div class="inner">
+					<div class="content">
+					
+					<div class="inner">
+					<header class="special">
+						<h2>Title</h2>
+						<p>Sample text.</p>
+					</header>
+					<div class="highlights">
+						<section>
+							<div class="content" onmouseover="" onclick="document.location='#'">
+								<header>
+									<a class="icon fa-vcard-o"><span class="label">Icon</span></a>
+									<h3>Title</h3>
+								</header>
+								<p>Sample text.</p>
+							</div>
+						</section>
+						<section>
+							<div class="content" onmouseover="" onclick="document.location='#'">
+								<header>
+									<a class="icon fa-files-o"><span class="label">Icon</span></a>
+									<h3>Title</h3>
+								</header>
+								<p>Sample text.</p>
+							</div>
+						</section>
+					</div>
+				</div>
+					
+						<header>
+							<h2>Title</h2>
+						</header>
+						<p>Sample text.</p>
+						<hr />
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Title</h3>
+							<p>Sample text.</p>
+						</section>
+						<section>
+							<h4>Title</h4>
+							<ul class="alt">
+								<li><a href="#">Item</a></li>
+								<li><a href="#">Item</a></li>
+								<li><a href="#">Item</a></li>
+								<li><a href="#">Item</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>Title</h4>
+							<ul class="plain">
+								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						<!-- &copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>. -->
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<!-- <script src="assets/js/jquery.min.js"></script> -->
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+			
+			<script>
+				jQuery(document).ready(function($) {
+				  $(".theme").click(function() {
+					$(".theme").toggleClass("active");
+					$("").toggleClass("dark-mode");
+					$.cookie("theme", $(".theme").hasClass('active'));
+				  });
+
+				  if ($.cookie("theme") == "true") {
+					$(".theme").addClass("active");
+					$("body").addClass("dark-mode");
+				  }
+				});
+			</script>
+			
+			<script>
+				function myFunction() {
+				   var element = document.body;
+				   element.classList.toggle("dark-mode");
+				}
+			</script>
+
+	</body>
 </html>
