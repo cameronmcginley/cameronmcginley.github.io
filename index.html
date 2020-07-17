@@ -1,154 +1,132 @@
-<!DOCTYPE HTML>
-<!--
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Test</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<a class="logo">Cameron McGinley</a>
-				<a class="headerlink chosen" href="index.html">Home</a>
-				<!-- <a class="headerlink" href="#">Elements</a>
-				<a class="headerlink" href="#">Generic</a> -->
-				<a class="theme" onclick="myFunction()"></a>
-				<nav>
-					<a href="#menu">Menu</a>
-				</nav>
-			</header>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<!-- <li><a href="#">Elements</a></li>
-					<li><a href="#">Generic</a></li>--> 
-				</ul>
-			</nav>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 
-		<!-- Heading -->
-			<div id="heading" >
-				<h1>Test</h1>
-			</div>
+<style>
+	html {
+		overflow-y: scroll;
+	}
 
-		<!-- Main -->
-			<section id="main" class="wrapper">
-			
-				<div class="inner">
-					<div class="content">
-					
-					<div class="inner">
-					<header class="special">
-						<h2>Title</h2>
-						<p>Sample text.</p>
-					</header>
-					<div class="highlights">
-						<section>
-							<div class="content" onmouseover="" onclick="document.location='#'">
-								<header>
-									<a class="icon fa-vcard-o"><span class="label">Icon</span></a>
-									<h3>Title</h3>
-								</header>
-								<p>Sample text.</p>
-							</div>
-						</section>
-						<section>
-							<div class="content" onmouseover="" onclick="document.location='#'">
-								<header>
-									<a class="icon fa-files-o"><span class="label">Icon</span></a>
-									<h3>Title</h3>
-								</header>
-								<p>Sample text.</p>
-							</div>
-						</section>
-					</div>
-				</div>
-					
-						<header>
-							<h2>Title</h2>
-						</header>
-						<p>Sample text.</p>
-						<hr />
-					</div>
-				</div>
-			</section>
+	.container {
+		padding-right: 1em;
+		padding-left: 1em;
+		margin-right: auto;
+		margin-left: auto;
+		top: 0;
+		left: 0;
+		max-width: 48em;
+		word-wrap: break-word;
+	}
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<div class="content">
-						<section>
-							<h3>Title</h3>
-							<p>Sample text.</p>
-						</section>
-						<section>
-							<h4>Title</h4>
-							<ul class="alt">
-								<li><a href="#">Item</a></li>
-								<li><a href="#">Item</a></li>
-								<li><a href="#">Item</a></li>
-								<li><a href="#">Item</a></li>
-							</ul>
-						</section>
-						<section>
-							<h4>Title</h4>
-							<ul class="plain">
-								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
-								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
-								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
-							</ul>
-						</section>
-					</div>
-					<div class="copyright">
-						<!-- &copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>. -->
-					</div>
-				</div>
-			</footer>
+	.tab {
+		text-indent: 2em;
+	}
 
-		<!-- Scripts -->
-			<!-- <script src="assets/js/jquery.min.js"></script> -->
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-		
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-			
-			<script src="assets/js/theme.js"></script>
-		
-			<!--<script>
-				jQuery(document).ready(function($) {
-				  $(".theme").click(function() {
-					$(".theme").toggleClass("active");
-					$("").toggleClass("dark-mode");
-					$.cookie("theme", $(".theme").hasClass('active'));
-				  });
+	.topnav {
+	  overflow: hidden;
+	  width: 100%;
+	  top: 0;
+	}
 
-				  if ($.cookie("theme") == "true") {
-					$(".theme").addClass("active");
-					$("body").addClass("dark-mode");
-				  }
-				});
-			</script>-->
-			
-			<script>
-				function myFunction() {
-				   var element = document.body;
-				   element.classList.toggle("dark-mode");
-				}
-			</script>
+	hr.nav {
+		margin: 0px -1.25em 1.25em;
+		margin-top: .35em;
+		border: 0;
+		border-top: .0625em solid #d9d9d9;
 
-	</body>
+	}
+
+	.topnav a {
+	  float: left;
+		display: block;
+		color: #505050;
+		text-align: center;
+		text-decoration: none;
+		font-size: 1.5em;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 700;
+		margin-top: 0.8em;
+		margin-left: 1.25em;
+	}
+
+	.topnav a:hover:not(.active) {
+	  color: #4166f5;
+	}
+
+	.topnav a.active {
+		font-size: 2em;
+		font-weight: 700;
+		padding-top: 0.375em;
+		margin: 0px;
+	}
+
+	.topnav .icon {
+	  display: none;
+	}
+
+	@media screen and (max-width: 37.5em) {
+	  .topnav a:not(:first-child) {display: none;}
+	  .topnav a.icon {
+		float: right;
+		display: block;
+	  }
+	}
+
+	@media screen and (max-width: 37.5em) {
+	  .topnav.responsive {position: relative;}
+	  .topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	  }
+	  .topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	  }
+	}
+</style>
+
+<body style="margin: 0px;">
+
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+
+    <head>
+
+
+    </head>
+
+
+    <div class=container>
+        <div class="topnav" id="myTopnav">
+            <a class="active">Cameron McGinley</a>
+			<a href="#">Test</a>
+			<a href="#">Test2</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <hr class=nav>
+
+
+    <div class=container style="margin-top: 2.5em">
+        <!-- Main body text-->
+        Sample
+    </div>
+</body>
+
 </html>
