@@ -1,3 +1,8 @@
+/*
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
 (function($) {
 
 	var	$window = $(window),
@@ -22,19 +27,6 @@
 			}, 100);
 		});
 
-	// Menu.
-		$('#menu')
-			.append('<a href="#menu" class="close"></a>')
-			.appendTo($body)
-			.panel({
-				target: $body,
-				visibleClass: 'is-menu-visible',
-				delay: 500,
-				hideOnClick: true,
-				hideOnSwipe: true,
-				resetScroll: true,
-				resetForms: true,
-				side: 'right'
-			});
+
 
 })(jQuery);
