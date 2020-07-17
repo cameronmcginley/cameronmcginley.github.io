@@ -4,6 +4,19 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 (function($) {
+	
+	jQuery(document).ready(function($) {
+	  $(".theme").click(function() {
+		$(".theme").toggleClass("active");
+		$("").toggleClass("dark-mode");
+		$.cookie("theme", $(".theme").hasClass('active'));
+	  });
+
+	  if ($.cookie("theme") == "true") {
+		$(".theme").addClass("active");
+		$("body").addClass("dark-mode");
+	  }
+	});
 
 	var	$window = $(window),
 		$banner = $('#banner'),
