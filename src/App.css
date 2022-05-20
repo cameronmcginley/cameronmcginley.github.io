@@ -14,7 +14,7 @@ p {
 
 .section {
   width: 100%;
-  background-color: #eee;
+  /* background-color: #eee; */
 
   display: flex;
   flex-direction: column;
