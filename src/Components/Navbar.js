@@ -13,24 +13,25 @@ const Navbar = () => {
     // )
 
     return (
-        <Paper className="navbar" square={true}>
+        <div className="navbar underline" square={true}>
             {/* <h1>Demo Application</h1> */}
             <div className="nav-title">
-                <p><b>WPD Course Sign-In Dashboard</b></p>
+                <p><b>Cameron McGinley</b></p>
             </div>
 
             <div className="nav-links">
                 <Button color="primary" variant="text" href="/" >
                 Home
                 </Button>
-                <Button color="primary" variant="text" href="/courses" >
-                Courses
+                <Button color="primary" variant="text" href="/" >
+                Publications
                 </Button>
-                <Button color="primary" variant="text" href="/viewdata" >
-                View Data
+                <Button color="primary" variant="text" href="/" >
+                Projects
                 </Button>
+
             </div>
-        </Paper>
+        </div>
     )
 }
 
