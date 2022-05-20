@@ -12,6 +12,13 @@ p {
   border-bottom: 1px solid lightgray;
 }
 
+.projectCard {
+  background-color: aquamarine;
+
+  display:flex;
+  flex-direction: row;
+}
+
 .section {
   width: 100%;
   background-color: #eee;
