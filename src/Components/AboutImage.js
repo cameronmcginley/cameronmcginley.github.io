@@ -11,7 +11,9 @@ const AboutImage = (props) => {
     <div className="about image">
         <img src={headshot} className="headshot" alt="Logo" />
         <h1>Cameron McGinley</h1>
-        <p>MS CS at UC San Diego</p>
+        {/* <p>MS CS at UC San Diego</p> */}
+
+        <p>camcginley@ucsd.edu</p>
 
         <div className="about image links">
             <Link>Resume</Link>

@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "../Components/Card";
 import { Paper, Box, Button } from "@mui/material";
 
 const Navbar = () => {

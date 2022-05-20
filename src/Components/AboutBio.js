@@ -7,7 +7,7 @@ const AboutBio = (props) => {
 
     return (
     <div className="about bio">
-        <h1 className="underline">About Me</h1>
+        <h2 className="underline">About Me</h2>
         <p>I am a Computer Science MS student at UC San Diego set to graduate in December 2023.</p>
         <p>Before coming to San Diego, I spent my time working on bug detection software at Purdue University, phishing email detection and generating natural language responses at Wichita State University, and working in QA with data storage system software at NetApp.</p>
 
