@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = (props) => {
     return (
-        <div className="section publications">
+        <div name="Projects" className="section publications">
             <h2 className="underline">Projects</h2>
             <ProjectCard cardData={{
                 title: "Movie Recommender",
@@ -17,7 +17,7 @@ const Projects = (props) => {
             <ProjectCard cardData={{
                 title: "Roblox Object Placement System",
                 link: "https://github.com/cameronmcginley/RBLX-PlacementSystem",
-                description: "Tried my hand at Roblox development and built an object placement system. This makes use of raycasting and also implements efficient client-server communications for choosing object and location via client, and building via server. Uses optimal object design to allow for easy additions of new objects and how they interact with the world (e.g. custom hitboxes). Additionally, it saves placed objects per account. Coded in a Rojo enviroment to synchrozine external codebase into Roblox Studio to allow for Git version control.",
+                description: "Tried my hand at Roblox development and built an object placement system. This makes use of raycasting and efficient client-server communications for choosing object and location via client, and building via server. Uses optimal object design to allow for easy additions of new objects and how they interact with the world (e.g. custom hitboxes). Additionally, it saves placed objects per account. Project built in a Rojo enviroment to synchrozine external codebase into Roblox Studio to allow for Git version control.",
                 tools: ["Lua", "Roblox Studio", "Rojo"],
                 image: "project-rblxplacement-image.png"
             }}/>

@@ -4,7 +4,7 @@ import PublicationCard from "./PublicationCard";
 
 const Publications = (props) => {
     return (
-        <div className="section publications">
+        <div name="Publications" className="section publications">
             <h2 className="underline">Publications</h2>
             <PublicationCard cardData={{
                 title: "Convolutional Neural Network Optimization for Phishing Email Classification",
