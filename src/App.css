@@ -13,15 +13,51 @@ p {
 }
 
 .projectCard {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 
   display:flex;
   flex-direction: row;
+
+  margin-bottom: 2rem;
+}
+
+.projectCard-image-div {
+  width: 400%;
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+/* .projectCard-image {
+  width: 40%;
+  max-width: 24rem;
+  max-height: 24rem;
+} */
+
+.projectCard-image {
+  width: 100%;
+}
+
+.projectCard-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .projectCard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectCard-info {
+    padding-left: 0;
+  }
 }
 
 .section {
   width: 100%;
-  background-color: #eee;
+  /* background-color: #eee; */
 
   display: flex;
   flex-direction: column;
