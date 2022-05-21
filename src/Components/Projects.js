@@ -50,7 +50,7 @@ const Projects = (props) => {
 
             <ProjectCard cardData={{
                 title: "This Website!",
-                link: "https://github.com/cameronmcginley/personal-website",
+                link: "https://github.com/cameronmcginley/cameronmcginley.github.io",
                 description: "A personal portfolio website, mainly designed to showcase a quick 'about me' section along with various projects. Built using React and Javascript.",
                 image: "project-personalwebsite-image.png",
                 tools: [
