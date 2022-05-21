@@ -18,10 +18,15 @@ const AboutBio = (props) => {
             ]}/>
 
             <AboutList title="Professional" items={[
-                {text: "Test Engineer", secondary: "NetApp (May 2019 - May 2022)"},
-                {text: "ML Research Intern", secondary: "Purdue University (June 2021 - July 2021)"},
-                {text: "ML Research Intern", secondary: "Wichita State University (June 2020 - August 2020)"}
+                // {text: "Test Engineer", secondary: "NetApp (May 2019 - May 2022)"},
+                // {text: "ML Research Intern", secondary: "Purdue University (June 2021 - July 2021)"},
+                // {text: "ML Research Intern", secondary: "Wichita State University (June 2020 - August 2020)"},
+                {text: "Department of Defense", secondary: "Computer Science Intern (May 2022 - August 2022)"},
+                {text: "NetApp", secondary: "Test Engineer (May 2019 - May 2022)"},
+                {text: "Purdue University", secondary: "ML Research Intern (June 2021 - July 2021)"},
+                {text: "Wichita State University", secondary: "ML Research Intern (June 2020 - August 2020)"},
             ]}/>
+            
         </div>
     </div>
     )

@@ -13,13 +13,9 @@ const Navbar = () => {
         <div className="navbar underline">
             <div className="nav-links">
                 {/* Wraps in mui buttons to look nice */}
-                <Button><a onClick={() => scroll.scrollToTop({smooth: true, spy: true, duration: 500})}>Home</a></Button>
-                <Button><ScrollLink activeClass="active" className="test1" to="Publications" spy={true} smooth={true} duration={500} >Publications</ScrollLink></Button>
-                <Button><ScrollLink activeClass="active" className="test1" to="Projects" spy={true} smooth={true} duration={500} >Projects</ScrollLink></Button>
-
-                {/* <a onClick={() => scroll.scrollToTop({smooth: true, spy: true, duration: 500})}>Home</a>
-                <ScrollLink activeClass="active" className="test1" to="Publications" spy={true} smooth={true} duration={500}>Publications</ScrollLink>
-                <ScrollLink activeClass="active" className="test1" to="Projects" spy={true} smooth={true} duration={500}>Projects</ScrollLink> */}
+                <Button onClick={() => scroll.scrollToTop({smooth: true, spy: true, duration: 500})}>Home</Button>
+                <Button onClick={() => scroller.scrollTo('Publications', {smooth: true, spy: true, duration: 500, offset: -40})}>Publications</Button>
+                <Button onClick={() => scroller.scrollTo('Projects', {smooth: true, spy: true, duration: 500, offset: -40})}>Projects</Button>
             </div>
         </div>
     )
