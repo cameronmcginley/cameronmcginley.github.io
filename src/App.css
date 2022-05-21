@@ -36,6 +36,15 @@ p {
   padding-left: 1rem;
 }
 
+.projectCard-attributes {
+  padding-top: .5rem;
+  /* padding-bottom: .5rem; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: left; */
+  column-gap: 2rem;
+}
+
 @media only screen and (max-width: 800px) {
   .projectCard {
     flex-direction: column;
