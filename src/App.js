@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
-import Home from "./Pages/Home";
-import Navbar from "./Components/Navbar";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+// Deployment via https://github.com/gitname/react-gh-pages
+// npm run deploy
 
 function App() {
   return (
