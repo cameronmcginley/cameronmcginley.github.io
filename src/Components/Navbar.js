@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Box, Button } from "@mui/material";
+import { Paper, Box, Button, Link } from "@mui/material";
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Navbar = () => {
@@ -7,10 +7,20 @@ const Navbar = () => {
     // Scroll To (Element)
     var Scroll   = require('react-scroll');
     var Element  = Scroll.Element;
-    var scroller = Scroll.scroller;
+    var scroller = Scroll.scroller;  
 
     return (
         <div className="navbar underline">
+            <div className='nav-title'>
+                <Link href="/" 
+                sx={{color: 'black', textDecoration: 'none', transition: '0.3s',
+                    "&:hover": {
+                        color: "primary.main"
+                    }
+                }}>
+                    <h3>Cameron McGinley</h3>
+                </Link>
+            </div>
             <div className="nav-links">
                 {/* Wraps in mui buttons to look nice */}
                 <Button onClick={() => scroll.scrollToTop({smooth: true, spy: true, duration: 500})}>Home</Button>

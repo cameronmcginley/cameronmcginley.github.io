@@ -152,12 +152,11 @@ p {
 
 .navbar {
   margin-bottom: 2rem;
-  width: 100%;
+  width: 80%;
+  max-width: 1200px;
+  column-gap: 1rem;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
   position: fixed;
   top: 0;
   background-color: white;
@@ -165,10 +164,21 @@ p {
   z-index: 10; 
 }
 
+.navbar h3 {
+  margin: .5rem;
+  padding-bottom: 6px;
+  font-size: 24px;
+}
+
 .nav-links {
   display: flex;
   flex-direction: row;
   column-gap: 1rem;
+  align-items: center;
+}
+
+.nav-links Button {
+  height: min-content;
 }
 
 .content {
