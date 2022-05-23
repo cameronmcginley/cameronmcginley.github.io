@@ -7,6 +7,35 @@ const Projects = (props) => {
         <div name="Projects" className="section publications">
             <h2 className="underline">Projects</h2>
             <ProjectCard cardData={{
+                title: "Course Sign-In Dashboard App",
+                link: "https://github.com/cameronmcginley/CourseDashboard/",
+                description: "This web app serves as a dashboard for courses and attendees. It provides an easy to use back-end for course instructors or administrators to handle course data and attendee data. One primary feature is the course tracker, where instructors can input their courses to automatically generate QR codes. These QR codes allow attendees to sign into courses by scanning them, either via the webpage or a printable page. This tracker also displays a unique page for each course with various helpful info and features. The next main feature is the attendee/sign-in data, where all sign-ins are stored. This data can be exported to .CSV, and comes with wide support for querying data. This project uses Firebase's Cloud Firestore as a database. More information can be found on the linked GitHub.",
+                image: "project-coursesignindashboard-image.png",
+                tools: [
+                    {
+                        text: "Cloud Firestore", 
+                        link: "https://firebase.google.com/docs/firestore"
+                    }, 
+                    {
+                        text: "React", 
+                        link: "https://reactjs.org/"
+                    }, 
+                    {
+                        text: "Javascript", 
+                        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                    },
+                    {
+                        text: "Node.js", 
+                        link: "https://nodejs.org/en/"
+                    },
+                    {
+                        text: "MUI", 
+                        link: "https://mui.com/"
+                    },
+                ],
+            }}/>
+
+            <ProjectCard cardData={{
                 title: "Movie Recommender",
                 link: "https://github.com/cameronmcginley/MovieRecommender",
                 description: "Data science course project to build a recommender system without AI. Cleans a 70k+ IMDb movie dataset and standardizes all fields. Recommender collects a user's n favorite movies, then uses a custom algorithm to find their n best movie recommendations. Allows a user to modify weights, e.g. a user can place more or less emphasis on genre or several other fields as they wish. A random class survey showed successful recommendations at x% using default weights, where a successful recommendation is rated as good by the user, or if the user has seen it already (must be a good recommendation if they were willing to watch it!). Pandas allows for vectorization and quick runtimes.",
@@ -63,13 +92,11 @@ const Projects = (props) => {
                         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                     }, 
                     {
-                        text: "MUI", 
-                        link: "https://mui.com/"
+                        text: "Node.js", 
+                        link: "https://nodejs.org/en/"
                     },
                 ],
             }}/>
-
-
         </div>
     )
 }
