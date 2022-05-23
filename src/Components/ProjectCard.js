@@ -6,27 +6,33 @@ const ProjectCard = (props) => {
     <div className="projectCard">
         <Box 
             className="projectCard-image-div"
-            sx={{ transform: 'translateZ(0)', overflow: 'hidden', border: "1px solid black" }}
+            sx={{ 
+                transform: 'translateZ(0)', 
+                overflow: 'hidden', 
+                border: "1px solid black",
+                width: '400%',
+                height: '100%',
+                maxWidth: '20rem',
+                maxHeight: '20rem',
+            }}
         >
             <Link href={props.cardData.link}>
                 <Box
                     className="projectCard-image"
                     component="img"
                     sx={{
+                        display: 'block',
+                        width: '100%',
+                        height: 'auto',
                         transition: '0.2s',
                         "&:hover": {
                             transform: 'scale(1.1)',
-                            overflow: 'hidden'
+                            overflow: 'hidden',
                         }
                     }}
                     alt="Project Image" 
                     src={"images/" + props.cardData.image} 
                 />
-                {/* <img style={{border: "1px solid black"}}
-                    src={"images/" + props.cardData.image} 
-                    alt="Project Image" 
-                    className="projectCard-image"
-                    sx={{ }}>/> */}
             </Link>
         </Box>
 

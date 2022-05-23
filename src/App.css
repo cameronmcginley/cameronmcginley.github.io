@@ -10,6 +10,7 @@ p {
 
 .underline {
   border-bottom: 1px solid lightgray;
+  width: 100%;
 }
 
 .projectCard {
@@ -18,8 +19,7 @@ p {
   margin-bottom: 2rem;
 }
 
-.projectCard-image-div {
-  /* <Link> scales the image down by 10x??? */
+/* .projectCard-image-div {
   width: 400%;
   max-width: 20rem;
   max-height: 20rem;
@@ -27,7 +27,7 @@ p {
 
 .projectCard-image {
   width: 100%;
-}
+} */
 
 .projectCard-info {
   display: flex;
@@ -151,17 +151,23 @@ p {
 }
 
 .navbar {
-  margin-bottom: 2rem;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background-color: white;
+  /* AboutLists show over navbar for some reason */
+  z-index: 10; 
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-content {
   width: 80%;
   max-width: 1200px;
   column-gap: 1rem;
   display: flex;
   flex-direction: row;
-  position: fixed;
-  top: 0;
-  background-color: white;
-  /* AboutLists show over navbar for some reason */
-  z-index: 10; 
+
 }
 
 .navbar h3 {
@@ -189,7 +195,7 @@ p {
   width: 80%;
   max-width: 1200px;
 
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .App {
