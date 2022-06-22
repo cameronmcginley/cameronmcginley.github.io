@@ -13,10 +13,17 @@ p {
   width: 100%;
 }
 
+.separator {
+  border: 0;
+  border-bottom: 1px solid lightgray;
+  width: 75%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 .projectCard {
   display:flex;
   flex-direction: row;
-  margin-bottom: 2rem;
 }
 
 /* .projectCard-image-div {

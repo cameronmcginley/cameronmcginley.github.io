@@ -125,6 +125,7 @@ const Projects = (props) => {
                     description:
                         "A personal portfolio website, mainly designed to showcase a quick 'about me' section along with various projects. Built using React and Javascript.",
                     image: "project-personalwebsite-image.png",
+                    is_last: true,
                     tools: [
                         {
                             text: "React",
