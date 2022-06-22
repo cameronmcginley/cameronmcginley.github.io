@@ -29,12 +29,19 @@ p {
   width: 100%;
 } */
 
+.projectCard-title {
+  display: flex;
+  flex-direction: row;
+}
+
 .projectCard-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* align-items: left; */
   padding-left: 1rem;
   width: 60%;
+  
 }
 
 .projectCard-attributes {

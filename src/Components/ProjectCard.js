@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Box } from "@mui/material";
+import { Link, Box, Tooltip } from "@mui/material";
 
 const ProjectCard = (props) => {
     return (
@@ -17,29 +17,39 @@ const ProjectCard = (props) => {
                 }}
             >
                 <Link href={props.cardData.gh_link}>
-                    <Box
-                        className="projectCard-image"
-                        component="img"
-                        sx={{
-                            display: "block",
-                            width: "100%",
-                            height: "auto",
-                            transition: "0.2s",
-                            "&:hover": {
-                                transform: "scale(1.1)",
-                                overflow: "hidden",
-                            },
-                        }}
-                        alt="Project Image"
-                        src={"images/" + props.cardData.image}
-                    />
+                    <Tooltip title={props.cardData.gh_link} followCursor>
+                        <Box
+                            className="projectCard-image"
+                            component="img"
+                            sx={{
+                                display: "block",
+                                width: "100%",
+                                height: "auto",
+                                transition: "0.2s",
+                                "&:hover": {
+                                    transform: "scale(1.1)",
+                                    overflow: "hidden",
+                                },
+                            }}
+                            alt="Project Image"
+                            src={"images/" + props.cardData.image}
+                        />
+                    </Tooltip>
                 </Link>
             </Box>
 
             <div className="projectCard-info">
-                <Link href={props.cardData.gh_link}>
-                    <h3>{props.cardData.title}</h3>
-                </Link>
+                <div className="projectCard-title">
+                    <Link href={props.cardData.gh_link}>
+                        <Tooltip
+                            title={props.cardData.gh_link}
+                            placement="top"
+                            arrow
+                        >
+                            <h3>{props.cardData.title}</h3>
+                        </Tooltip>
+                    </Link>
+                </div>
 
                 <div className="projectCard-projectLinks">
                     <div className="projectCard-projectLink">
@@ -63,9 +73,11 @@ const ProjectCard = (props) => {
 
                 <div className="projectCard-attributes">
                     {props.cardData.tools.map((tool) => (
-                        <Link href={tool.link}>
-                            <p>{tool.text}</p>
-                        </Link>
+                        <Tooltip title={tool.link} placement="bottom" arrow>
+                            <Link href={tool.link}>
+                                <p>{tool.text}</p>
+                            </Link>
+                        </Tooltip>
                     ))}
                 </div>
             </div>
