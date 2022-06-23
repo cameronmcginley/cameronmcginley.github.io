@@ -1,5 +1,6 @@
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import './App.css';
+import "./App.css";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 // Deployment via https://github.com/gitname/react-gh-pages
@@ -8,11 +9,10 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-
       <BrowserRouter>
         <div className="App">
           <Navbar />
-          
+
           {/* Pages exist in the content div */}
           <div className="content">
             <Routes>
@@ -21,7 +21,6 @@ function App() {
           </div>
         </div>
       </BrowserRouter>
-
     </>
   );
 }
