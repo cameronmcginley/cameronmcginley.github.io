@@ -4,8 +4,8 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div name="Projects" className="section projects">
-      <h2 className="underline">Projects</h2>
+    <div name="Projects" className="section publications">
+      <h2 className="projects-title underline">Projects</h2>
       <p className="projects-note">Read more about each via the GitHub link!</p>
 
       <ProjectCard

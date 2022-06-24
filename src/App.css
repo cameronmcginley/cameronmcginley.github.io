@@ -108,16 +108,12 @@ p {
   margin: 0;
 }
 
-.section.projects p .section.projects h3 {
-  margin: 0;
-}
-
-.section.projects h2 {
+.projects-title {
   margin-bottom: 0.5rem;
 }
 
 .projects-note {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 
 .section.about {
