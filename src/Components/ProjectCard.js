@@ -52,7 +52,7 @@ const ProjectCard = (props) => {
 
           <div className="projectCard-projectLinks">
             <div className="projectCard-projectLink">
-              <h4>Github: </h4>
+              <b>Github: </b>
               <Link href={props.cardData.gh_link}>
                 <p>{props.cardData.gh_link}</p>
               </Link>
@@ -60,7 +60,7 @@ const ProjectCard = (props) => {
 
             {props.cardData.project_link && (
               <div className="projectCard-projectLink">
-                <h4>Public App: </h4>
+                <b>Public App: </b>
                 <Link href={props.cardData.project_link}>
                   <p>{props.cardData.project_link}</p>
                 </Link>

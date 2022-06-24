@@ -52,11 +52,11 @@ const Projects = () => {
           tools: [
             {
               text: "React",
-              link: "https://www.python.org/",
+              link: "https://reactjs.org/",
             },
             {
               text: "Javascript",
-              link: "https://pandas.pydata.org/",
+              link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
             },
           ],
         }}
@@ -95,7 +95,7 @@ const Projects = () => {
           gh_link: "https://github.com/cameronmcginley/RBLX-PlacementSystem/",
           description:
             "Tried my hand at Roblox development and built an object placement system. This makes use of raycasting and efficient client-server communications for choosing object and location via client, and building via server. Uses optimal object design to allow for easy additions of new objects and how they interact with the world (e.g. custom hitboxes). Additionally, it saves placed objects per account. Project built in a Rojo enviroment to synchrozine external codebase into Roblox Studio to allow for Git version control.",
-          image: "project-rblxplacement-image.png",
+          image: "project-rblxplacement-gif.gif",
           tools: [
             {
               text: "Lua",
