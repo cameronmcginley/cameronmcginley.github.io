@@ -4,8 +4,10 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div name="Projects" className="section publications">
+    <div name="Projects" className="section projects">
       <h2 className="underline">Projects</h2>
+      <p className="projects-note">Read more about each via the GitHub link!</p>
+
       <ProjectCard
         cardData={{
           title: "Course Sign-In Dashboard App",

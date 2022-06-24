@@ -108,6 +108,18 @@ p {
   margin: 0;
 }
 
+.section.projects p .section.projects h3 {
+  margin: 0;
+}
+
+.section.projects h2 {
+  margin-bottom: 0.5rem;
+}
+
+.projects-note {
+  margin-bottom: 1rem;
+}
+
 .section.about {
   flex-direction: row;
   column-gap: 2rem;
