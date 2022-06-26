@@ -64,31 +64,6 @@ const Projects = () => {
 
       <ProjectCard
         cardData={{
-          title: "Movie Recommender",
-          project_link: "",
-          gh_link: "https://github.com/cameronmcginley/MovieRecommender/",
-          description:
-            "Data science course project to build a recommender system without AI. Cleans a 70k+ IMDb movie dataset and standardizes all fields. Recommender collects a user's n favorite movies, then uses a custom algorithm to find their n best movie recommendations. Allows a user to modify weights, e.g. a user can place more or less emphasis on genre or several other fields as they wish. A random class survey showed successful recommendations at x% using default weights, where a successful recommendation is rated as good by the user, or if the user has seen it already (must be a good recommendation if they were willing to watch it!). Pandas allows for vectorization and quick runtimes.",
-          image: "project-movierecommender-image2.png",
-          tools: [
-            {
-              text: "Python",
-              link: "https://www.python.org/",
-            },
-            {
-              text: "Pandas",
-              link: "https://pandas.pydata.org/",
-            },
-            {
-              text: "NumPy",
-              link: "https://numpy.org/",
-            },
-          ],
-        }}
-      />
-
-      <ProjectCard
-        cardData={{
           title: "Roblox Object Placement System",
           project_link:
             "https://www.roblox.com/games/7619626087/Placement-System-Demo",
@@ -108,6 +83,52 @@ const Projects = () => {
             {
               text: "Rojo",
               link: "https://rojo.space/",
+            },
+          ],
+        }}
+      />
+
+      <ProjectCard
+        cardData={{
+          title: "Machine Learning Algorithm Tester",
+          project_link: "",
+          gh_link: "https://github.com/cameronmcginley/ml_algorithm_testing",
+          description:
+            "This project aims to output performance metrics and visualizations of various machine learning algorithms against the well-known iris dataset. Currently, it implements scikit-learn's LogisticRegression(), SVC(), and RandomForestClassifier(). The project allows for dynamic additions of new algorithms, by simpling defining them in a yaml file. Optimal hyperparameters are automatically found, and any model defined in the yaml will have its metrics and graph output.",
+          image: "project-mltester-image.png",
+          tools: [
+            {
+              text: "Python",
+              link: "https://www.python.org/",
+            },
+            {
+              text: "scikit-learn",
+              link: "https://scikit-learn.org/",
+            },
+          ],
+        }}
+      />
+
+      <ProjectCard
+        cardData={{
+          title: "Movie Recommender",
+          project_link: "",
+          gh_link: "https://github.com/cameronmcginley/MovieRecommender/",
+          description:
+            "Data science course project to build a recommender system without AI. Cleans a 70k+ IMDb movie dataset and standardizes all fields. Recommender collects a user's n favorite movies, then uses a custom algorithm to find their n best movie recommendations. Allows a user to modify weights, e.g. a user can place more or less emphasis on genre or several other fields as they wish. A random class survey showed successful recommendations at x% using default weights, where a successful recommendation is rated as good by the user, or if the user has seen it already (must be a good recommendation if they were willing to watch it!). Pandas allows for vectorization and quick runtimes.",
+          image: "project-movierecommender-image2.png",
+          tools: [
+            {
+              text: "Python",
+              link: "https://www.python.org/",
+            },
+            {
+              text: "Pandas",
+              link: "https://pandas.pydata.org/",
+            },
+            {
+              text: "NumPy",
+              link: "https://numpy.org/",
             },
           ],
         }}
