@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   return (
     <div name="Projects" className="section publications">
-      <h2 className="projects-title underline">Projects</h2>
+      <h2 className="projects-title underline">Featured Projects</h2>
       <p className="projects-note">Read more about each via the GitHub link!</p>
 
       <ProjectCard
@@ -18,24 +18,38 @@ const Projects = () => {
           image: "project-coursesignindashboard-image.png",
           tools: [
             {
-              text: "Cloud Firestore",
-              link: "https://firebase.google.com/docs/firestore",
+              text: "Javascript",
+              link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
             },
             {
               text: "React",
               link: "https://reactjs.org/",
             },
             {
-              text: "Javascript",
-              link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-            },
-            {
               text: "Node.js",
               link: "https://nodejs.org/en/",
             },
             {
-              text: "MUI",
-              link: "https://mui.com/",
+              text: "Cloud Firestore",
+              link: "https://firebase.google.com/docs/firestore",
+            },
+          ],
+        }}
+      />
+
+      <ProjectCard
+        cardData={{
+          title: "Optimized Brainf**k Interpreter",
+          project_link: "",
+          gh_link:
+            "https://github.com/cameronmcginley/optimized-brainfk-interpreter",
+          description:
+            "Interpreter for the brainf**k programming language, simply constisting of instructions. This interpreter implements some simple optimizations, such as condensing repetetitve instructions, and some more complex optimizations including some peephole optimization with pattern matching for common brainf**k algorithms, such as addition or subtraction.",
+          image: "project-brainfk-image.png",
+          tools: [
+            {
+              text: "C++",
+              link: "https://m.cplusplus.com/",
             },
           ],
         }}
@@ -51,12 +65,33 @@ const Projects = () => {
           image: "project-sortingvisualizer-gif.gif",
           tools: [
             {
+              text: "Javascript",
+              link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+            },
+            {
               text: "React",
               link: "https://reactjs.org/",
             },
+          ],
+        }}
+      />
+
+      <ProjectCard
+        cardData={{
+          title: "Machine Learning Algorithm Tester",
+          project_link: "",
+          gh_link: "https://github.com/cameronmcginley/ml-algorithm-testing",
+          description:
+            "This project aims to output performance metrics and visualizations of various machine learning algorithms against the well-known iris dataset. Currently, it implements scikit-learn's LogisticRegression(), SVC(), and RandomForestClassifier(). The project allows for dynamic additions of new algorithms, by simpling defining them in a yaml file. Optimal hyperparameters are automatically found, and any model defined in the yaml will have its metrics and graph output.",
+          image: "project-mltester-image.png",
+          tools: [
             {
-              text: "Javascript",
-              link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+              text: "Python",
+              link: "https://www.python.org/",
+            },
+            {
+              text: "scikit-learn",
+              link: "https://scikit-learn.org/",
             },
           ],
         }}
@@ -90,26 +125,32 @@ const Projects = () => {
 
       <ProjectCard
         cardData={{
-          title: "Machine Learning Algorithm Tester",
-          project_link: "",
-          gh_link: "https://github.com/cameronmcginley/ml_algorithm_testing",
+          title: "This Website!",
+          project_link: "https://cameronmcginley.com/",
+          gh_link:
+            "https://github.com/cameronmcginley/cameronmcginley.github.io/",
           description:
-            "This project aims to output performance metrics and visualizations of various machine learning algorithms against the well-known iris dataset. Currently, it implements scikit-learn's LogisticRegression(), SVC(), and RandomForestClassifier(). The project allows for dynamic additions of new algorithms, by simpling defining them in a yaml file. Optimal hyperparameters are automatically found, and any model defined in the yaml will have its metrics and graph output.",
-          image: "project-mltester-image.png",
+            "A personal portfolio website, mainly designed to showcase a quick 'about me' section along with various projects. Built using React and Javascript.",
+          image: "project-personalwebsite-image.png",
+          is_last: true,
           tools: [
             {
-              text: "Python",
-              link: "https://www.python.org/",
+              text: "Javascript",
+              link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
             },
             {
-              text: "scikit-learn",
-              link: "https://scikit-learn.org/",
+              text: "React",
+              link: "https://reactjs.org/",
+            },
+            {
+              text: "Node.js",
+              link: "https://nodejs.org/en/",
             },
           ],
         }}
       />
 
-      <ProjectCard
+      {/* <ProjectCard
         cardData={{
           title: "Movie Recommender",
           project_link: "",
@@ -132,34 +173,7 @@ const Projects = () => {
             },
           ],
         }}
-      />
-
-      <ProjectCard
-        cardData={{
-          title: "This Website!",
-          project_link: "https://cameronmcginley.com/",
-          gh_link:
-            "https://github.com/cameronmcginley/cameronmcginley.github.io/",
-          description:
-            "A personal portfolio website, mainly designed to showcase a quick 'about me' section along with various projects. Built using React and Javascript.",
-          image: "project-personalwebsite-image.png",
-          is_last: true,
-          tools: [
-            {
-              text: "React",
-              link: "https://reactjs.org/",
-            },
-            {
-              text: "Javascript",
-              link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-            },
-            {
-              text: "Node.js",
-              link: "https://nodejs.org/en/",
-            },
-          ],
-        }}
-      />
+      /> */}
     </div>
   );
 };
