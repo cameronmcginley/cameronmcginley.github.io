@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, Box, Tooltip } from "@mui/material";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
 
 const ProjectCard = (props) => {
   return (
@@ -50,40 +52,61 @@ const ProjectCard = (props) => {
             </Link>
           </div>
 
-          <div className="projectCard-projectLinks">
-            <div className="projectCard-projectLink">
-              <b>Github: </b>
-              <Link href={props.cardData.gh_link}>
-                <p>{props.cardData.gh_link}</p>
-              </Link>
-            </div>
-
+          {/* Links to GitHub and app */}
+          <Stack direction="row" spacing={1} className="projectCard-chips">
+            <Tooltip title={props.cardData.gh_link} placement="bottom" arrow>
+              <Chip
+                color="primary"
+                size="small"
+                label="GitHub"
+                component="a"
+                href={props.cardData.gh_link}
+                variant="outlined"
+                clickable
+              />
+            </Tooltip>
             {props.cardData.project_link && (
-              <div className="projectCard-projectLink">
-                <b>Public App: </b>
-                <Link href={props.cardData.project_link}>
-                  <p>{props.cardData.project_link}</p>
-                </Link>
-              </div>
-            )}
-          </div>
-
-          <p>{props.cardData.description}</p>
-
-          <div className="projectCard-attributes">
-            {props.cardData.tools.map((tool) => (
               <Tooltip
-                key={tool.text}
-                title={tool.link}
+                title={props.cardData.project_link}
                 placement="bottom"
                 arrow
               >
-                <Link href={tool.link}>
-                  <p>{tool.text}</p>
-                </Link>
+                <Chip
+                  color="primary"
+                  size="small"
+                  label="Public App"
+                  component="a"
+                  href={props.cardData.project_link}
+                  variant="outlined"
+                  clickable
+                />
+              </Tooltip>
+            )}
+          </Stack>
+
+          <p>{props.cardData.description}</p>
+
+          {/* Links to tools/attrs */}
+          <Stack direction="row" spacing={1} className="projectCard-chips">
+            {props.cardData.tools.map((tool) => (
+              <Tooltip
+                title={tool.link}
+                placement="bottom"
+                arrow
+                key={tool.text}
+              >
+                <Chip
+                  color="primary"
+                  size="small"
+                  label={tool.text}
+                  component="a"
+                  href={tool.link}
+                  variant="outlined"
+                  clickable
+                />
               </Tooltip>
             ))}
-          </div>
+          </Stack>
         </div>
       </div>
       {/* Dont put the separator of card has is_last flag */}

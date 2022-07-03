@@ -61,6 +61,11 @@ p {
   column-gap: 2rem;
 }
 
+.projectCard-chips {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .projectCard-projectLinks {
   display: flex;
   flex-direction: column;
