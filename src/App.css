@@ -78,7 +78,7 @@ p {
   column-gap: 0.5rem;
 }
 
-.projectCard-projectLink > * {
+.projectCard-projectLink>* {
   padding: 0;
   margin: 0;
 }
@@ -89,6 +89,7 @@ p {
     justify-content: center;
     align-items: center;
   }
+
   .projectCard-info {
     padding-left: 0;
     width: 100%;
@@ -119,14 +120,6 @@ p {
 .section.about {
   flex-direction: row;
   column-gap: 2rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .section.about {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 .about.image {
@@ -186,10 +179,30 @@ p {
   padding: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .section.about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about.bio.lists {
+    flex-direction: column;
+  }
+}
+
 .headshot {
   width: 100%;
   max-height: 16rem;
   max-width: 16rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .about.image {
+    width: 100%;
+  }
 }
 
 .section {
@@ -231,6 +244,17 @@ p {
 
 .nav-links Button {
   height: min-content;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-title {
+    display: none;
+  }
+
+  .navbar-content {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .content {
