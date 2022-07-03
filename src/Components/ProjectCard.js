@@ -21,73 +21,73 @@ const ProjectCard = (props) => {
           }}
         >
           <Link href={props.cardData.gh_link}>
-            <Tooltip title={props.cardData.gh_link} followCursor>
-              <Box
-                className="projectCard-image"
-                component="img"
-                sx={{
-                  display: "block",
-                  width: "100%",
-                  height: "auto",
-                  transition: "0.2s",
-                  "&:hover": {
-                    transform: "scale(1.1)",
-                    overflow: "hidden",
-                  },
-                }}
-                alt="Project Image"
-                src={"images/" + props.cardData.image}
-              />
-            </Tooltip>
+            <Box
+              className="projectCard-image"
+              component="img"
+              sx={{
+                display: "block",
+                width: "100%",
+                height: "auto",
+                transition: "0.2s",
+                "&:hover": {
+                  transform: "scale(1.1)",
+                  overflow: "hidden",
+                },
+              }}
+              alt="Project Image"
+              src={"images/" + props.cardData.image}
+            />
           </Link>
         </Box>
 
         {/* Information */}
         <div className="projectCard-info">
-          <div className="projectCard-title">
-            <Link href={props.cardData.gh_link}>
-              <Tooltip title={props.cardData.gh_link} placement="top" arrow>
+          <div className="projectCard-titleandchips">
+            <div className="projectCard-title">
+              <Link href={props.cardData.gh_link}>
                 <h3>{props.cardData.title}</h3>
-              </Tooltip>
-            </Link>
-          </div>
+              </Link>
+            </div>
 
-          {/* Links to GitHub and app */}
-          <Stack direction="row" spacing={1} className="projectCard-chips">
-            <Tooltip title={props.cardData.gh_link} placement="bottom" arrow>
-              <Chip
-                color="primary"
-                size="small"
-                label="GitHub"
-                component="a"
-                href={props.cardData.gh_link}
-                variant="outlined"
-                clickable
-              />
-            </Tooltip>
-            {props.cardData.project_link && (
-              <Tooltip
-                title={props.cardData.project_link}
-                placement="bottom"
-                arrow
-              >
+            {/* Links to GitHub and app */}
+            <Stack direction="row" spacing={1} className="projectCard-chips">
+              <Tooltip title={props.cardData.gh_link} placement="bottom" arrow>
                 <Chip
                   color="primary"
-                  size="small"
-                  label="Public App"
+                  label="GitHub"
                   component="a"
-                  href={props.cardData.project_link}
+                  href={props.cardData.gh_link}
                   variant="outlined"
                   clickable
                 />
               </Tooltip>
-            )}
-          </Stack>
+              {props.cardData.project_link && (
+                <Tooltip
+                  title={props.cardData.project_link}
+                  placement="bottom"
+                  arrow
+                >
+                  <Chip
+                    color="primary"
+                    label="Public App"
+                    component="a"
+                    href={props.cardData.project_link}
+                    variant="outlined"
+                    clickable
+                  />
+                </Tooltip>
+              )}
+            </Stack>
+          </div>
 
           <p>{props.cardData.description}</p>
 
           {/* Links to tools/attrs */}
-          <Stack direction="row" spacing={1} className="projectCard-chips">
+          <Stack
+            direction="row"
+            spacing={1}
+            className="projectCard-chips-after"
+          >
             {props.cardData.tools.map((tool) => (
               <Tooltip
                 title={tool.link}
@@ -96,7 +96,7 @@ const ProjectCard = (props) => {
                 key={tool.text}
               >
                 <Chip
-                  color="primary"
+                  color="default"
                   size="small"
                   label={tool.text}
                   component="a"
