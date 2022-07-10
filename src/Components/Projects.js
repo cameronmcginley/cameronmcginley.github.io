@@ -44,12 +44,16 @@ const Projects = () => {
           gh_link:
             "https://github.com/cameronmcginley/optimized-brainfk-interpreter",
           description:
-            "Interpreter for the brainf**k programming language, simply constisting of instructions. This interpreter implements some simple optimizations, such as condensing repetetitve instructions, and some more complex optimizations including some peephole optimization with pattern matching for common brainf**k algorithms, such as addition or subtraction.",
+            "Interpreter for the brainf**k programming language: a turing complete language consisting of 8 instructions allowing for manipulation of bytes. This interpreter implements some simple optimizations, such as condensing repetetitve instructions, and some more complex optimizations including some peephole optimization with pattern matching for common brainf**k algorithms, such as addition or subtraction.",
           image: "project-brainfk-image.png",
           tools: [
             {
               text: "C++",
               link: "https://m.cplusplus.com/",
+            },
+            {
+              text: "Brainf**k",
+              link: "https://esolangs.org/wiki/Brainfuck",
             },
           ],
         }}
