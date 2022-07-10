@@ -7,7 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const AboutImage = () => {
   return (
     <div className="about image">
-      <img src="images/headshot.webp" className="headshot" alt="Logo" />
+      <img src="images/headshot.jpg" className="headshot" alt="Logo" />
       <h1>Cameron McGinley</h1>
       {/* <p>MS CS at UC San Diego</p> */}
 
