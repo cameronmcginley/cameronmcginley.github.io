@@ -126,58 +126,6 @@ const Projects = () => {
           ],
         }}
       />
-
-      <ProjectCard
-        cardData={{
-          title: "This Website!",
-          project_link: "https://cameronmcginley.com/",
-          gh_link:
-            "https://github.com/cameronmcginley/cameronmcginley.github.io/",
-          description:
-            "A personal portfolio website, mainly designed to showcase a quick 'about me' section along with various projects. Built using React and Javascript.",
-          image: "project-personalwebsite-image.png",
-          is_last: true,
-          tools: [
-            {
-              text: "Javascript",
-              link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-            },
-            {
-              text: "React",
-              link: "https://reactjs.org/",
-            },
-            {
-              text: "Node.js",
-              link: "https://nodejs.org/en/",
-            },
-          ],
-        }}
-      />
-
-      {/* <ProjectCard
-        cardData={{
-          title: "Movie Recommender",
-          project_link: "",
-          gh_link: "https://github.com/cameronmcginley/MovieRecommender/",
-          description:
-            "Data science course project to build a recommender system without AI. Cleans a 70k+ IMDb movie dataset and standardizes all fields. Recommender collects a user's n favorite movies, then uses a custom algorithm to find their n best movie recommendations. Allows a user to modify weights, e.g. a user can place more or less emphasis on genre or several other fields as they wish. A random class survey showed successful recommendations at x% using default weights, where a successful recommendation is rated as good by the user, or if the user has seen it already (must be a good recommendation if they were willing to watch it!). Pandas allows for vectorization and quick runtimes.",
-          image: "project-movierecommender-image2.png",
-          tools: [
-            {
-              text: "Python",
-              link: "https://www.python.org/",
-            },
-            {
-              text: "Pandas",
-              link: "https://pandas.pydata.org/",
-            },
-            {
-              text: "NumPy",
-              link: "https://numpy.org/",
-            },
-          ],
-        }}
-      /> */}
     </div>
   );
 };
