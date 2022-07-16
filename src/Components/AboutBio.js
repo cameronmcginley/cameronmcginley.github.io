@@ -35,12 +35,9 @@ const AboutBio = () => {
         <AboutList
           title="Professional"
           items={[
-            // {text: "Test Engineer", secondary: "NetApp (May 2019 - May 2022)"},
-            // {text: "ML Research Intern", secondary: "Purdue University (June 2021 - July 2021)"},
-            // {text: "ML Research Intern", secondary: "Wichita State University (June 2020 - August 2020)"},
             {
               text: "Department of Defense",
-              secondary: "Computer Science Intern (May 2022 - August 2022)",
+              secondary: "Software Engineer Intern (May 2022 - August 2022)",
             },
             {
               text: "NetApp",
