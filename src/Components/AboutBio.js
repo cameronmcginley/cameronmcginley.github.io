@@ -8,15 +8,14 @@ const AboutBio = () => {
       <h2 className="underline">About Me</h2>
       <p>
         I am a Computer Science MS student at UC San Diego set to graduate in
-        December 2023. Currently seeking software engineering internships for
-        summer 2023.
+        December 2023.
       </p>
       <p>
         Before coming to San Diego, I spent my time working on automating C++
-        vulnerability detection for the US Department of Defense, buggy Java
+        vulnerability detection for the U.S. Department of Defense, buggy Java
         code detection at Purdue University, phishing email detection and
         generating natural language responses at Wichita State University, and
-        working in test automation on data storage system firmware at NetApp.
+        working in software test automation on data storage system firmware at NetApp.
       </p>
 
       <div className="about bio lists">
@@ -38,12 +37,12 @@ const AboutBio = () => {
           title="Professional"
           items={[
             {
-              text: "Department of Defense",
+              text: "U.S. Department of Defense",
               secondary: "Software Engineer Intern (May 2022 - August 2022)",
             },
             {
               text: "NetApp",
-              secondary: "Test Engineer (May 2019 - May 2022)",
+              secondary: "Test Engineer Intern (May 2019 - May 2022)",
             },
             {
               text: "Purdue University",
