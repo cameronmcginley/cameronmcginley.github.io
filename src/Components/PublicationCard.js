@@ -6,7 +6,7 @@ const PublicationCard = (props) => {
     <div>
       <div className="projectCard-title">
         <Link href={props.cardData.link}>
-          <Tooltip title={props.cardData.link} placement="top" arrow>
+          <Tooltip title={props.cardData.link} placement="bottom" arrow>
             <h3>{props.cardData.title}</h3>
           </Tooltip>
         </Link>

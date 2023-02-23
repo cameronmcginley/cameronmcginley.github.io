@@ -28,6 +28,10 @@ p {
   flex-direction: row;
 }
 
+.projectCard-title {
+  display: flex;
+}
+
 .projectCard-titleandchips {
   display: flex;
   flex-direction: row;
@@ -45,10 +49,10 @@ p {
 .projectCard-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   /* align-items: left; */
   padding-left: 1rem;
-  width: 60%;
+  /* width: 60%; */
 }
 
 .projectCard-attributes {
