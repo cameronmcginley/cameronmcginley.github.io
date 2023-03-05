@@ -44,7 +44,7 @@ const Projects = () => {
           gh_link:
             "https://github.com/cameronmcginley/optimized-brainfk-interpreter",
           description:
-            "Interpreter for the brainf**k programming language: a turing complete language consisting of 8 instructions allowing for manipulation of bytes. This interpreter implements some simple optimizations, such as condensing repetetitve instructions, and some more complex optimizations including some peephole optimization with pattern matching for common brainf**k algorithms, such as addition or subtraction.",
+            "Interpreter for the brainf**k programming language: a Turing complete language consisting of 8 instructions allowing for manipulation of bytes. This interpreter implements some simple optimizations, such as condensing repetitive instructions, and some more complex optimizations including peephole optimization with pattern matching for common brainf**k algorithms, such as addition or subtraction.",
           image: "project-brainfk-image.png",
           tools: [
             {
@@ -108,7 +108,7 @@ const Projects = () => {
             "https://www.roblox.com/games/7619626087/Placement-System-Demo",
           gh_link: "https://github.com/cameronmcginley/RBLX-PlacementSystem/",
           description:
-            "Tried my hand at Roblox development and built an object placement system. This makes use of raycasting and efficient client-server communications for choosing object and location via client, and building via server. Uses optimal object design to allow for easy additions of new objects and how they interact with the world (e.g. custom hitboxes). Additionally, it saves placed objects per account. Project built in a Rojo environment to synchrozine external codebase into Roblox Studio to allow for Git version control.",
+            "Tried my hand at Roblox development and built an object placement system. This makes use of raycasting and efficient client-server communications for choosing objects and locations via the client, and building via the server. Uses optimal object design to allow for easy additions of new objects and how they interact with the world (e.g. custom hitboxes). Additionally, it saves placed objects per account. Project built in a Rojo environment to synchronize external codebase into Roblox Studio to allow for Git version control.",
           image: "project-rblxplacement-gif.gif",
           tools: [
             {
