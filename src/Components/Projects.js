@@ -18,12 +18,12 @@ const Projects = () => {
           image: "project-coursesignindashboard-image.png",
           tools: [
             {
-              text: "Javascript",
+              text: "JavaScript",
               link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
             },
             {
               text: "React",
-              link: "https://reactjs.org/",
+              link: "https://react.dev/",
             },
             {
               text: "Node.js",
@@ -61,6 +61,39 @@ const Projects = () => {
 
       <ProjectCard
         cardData={{
+          title: "WIP: Projectile Points Web Database",
+          project_link: "http://projectile-points-database.vercel.app/",
+          gh_link: "https://github.com/cameronmcginley/projectile-points-web-database",
+          description:
+            "Web application that serves as a wikipedia-like database for projectile point (arrowhead) archaeological data. Allows for the creation, updating, and deleting of projectile point pages. Designed to improve on similar existing websites (maintained by universities) by better structuring data and allowing for far greater search and comparison of data, especially by automated means. Built with the Next.js framework on React, using GraphQL and a PostgreSQL database. More detailed stack info found on GitHub or public app.",
+          image: "project-projectilepoints-image.png",
+          tools: [
+            {
+              text: "TypeScript",
+              link: "https://www.typescriptlang.org/",
+            },
+            {
+              text: "Next.js",
+              link: "https://nextjs.org/",
+            },
+            {
+              text: "React",
+              link: "https://react.dev/",
+            },
+            {
+              text: "GraphQL",
+              link: "https://typegraphql.com/",
+            },
+            {
+              text: "PostgreSQL",
+              link: "https://www.postgresql.org/",
+            },
+          ],
+        }}
+      />
+
+      <ProjectCard
+        cardData={{
           title: "Sorting Visualizer",
           project_link: "https://cameronmcginley.com/sorting-visualizer/",
           gh_link: "https://github.com/cameronmcginley/sorting-visualizer/",
@@ -69,7 +102,7 @@ const Projects = () => {
           image: "project-sortingvisualizer-gif.gif",
           tools: [
             {
-              text: "Javascript",
+              text: "JavaScript",
               link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
             },
             {
@@ -103,7 +136,7 @@ const Projects = () => {
 
       <ProjectCard
         cardData={{
-          title: "Roblox Object Placement System",
+          title: "Roblox Demo: Object Placement System",
           project_link:
             "https://www.roblox.com/games/7619626087/Placement-System-Demo",
           gh_link: "https://github.com/cameronmcginley/RBLX-PlacementSystem/",
