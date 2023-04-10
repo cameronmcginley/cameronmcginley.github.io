@@ -98,7 +98,7 @@ const Projects = () => {
           project_link: "https://cameronmcginley.com/sorting-visualizer/",
           gh_link: "https://github.com/cameronmcginley/sorting-visualizer/",
           description:
-            "React JS application that visualizes various sorting algorithms, such as bubble sort, merge sort, and radix sort. Provides a set of configurations, including delay and array length, and even sound that matches the frequency of sorts!",
+            "React JS application that visualizes various sorting algorithms, such as bubble sort, merge sort, radix sort, and bogo sort. Provides a set of configurations, including delay and array length, and even sound that matches the frequency of sorts!",
           image: "project-sortingvisualizer-gif.gif",
           tools: [
             {
