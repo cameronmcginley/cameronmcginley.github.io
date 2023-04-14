@@ -3,6 +3,8 @@ import { Link } from "@mui/material";
 import "../App.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import SchoolIcon from '@mui/icons-material/School';
 
 const AboutImage = () => {
   return (
@@ -20,21 +22,20 @@ const AboutImage = () => {
           without
           rel="noopener noreferrer"
         >
-          Resume
+          <PictureAsPdfIcon /><p className="icon-link">Resume</p>
+        </Link>
+
+        <Link href="https://github.com/cameronmcginley">
+          <GitHubIcon /><p className="icon-link">GitHub</p>
+        </Link>
+
+        <Link href="https://www.linkedin.com/in/cameronmcginley/">
+          <LinkedInIcon /><p className="icon-link">LinkedIn</p>
         </Link>
 
         <Link href="https://scholar.google.com/citations?user=3AUzp3MAAAAJ&hl=en">
-          Google Scholar
+          <SchoolIcon /><p className="icon-link">Google Scholar</p>
         </Link>
-
-        <div className="about image links icons">
-          <Link href="https://github.com/cameronmcginley">
-            <GitHubIcon />
-          </Link>
-          <Link href="https://www.linkedin.com/in/cameronmcginley/">
-            <LinkedInIcon />
-          </Link>
-        </div>
       </div>
     </div>
   );

@@ -168,6 +168,13 @@ p {
 
 .about.image.links a {
   padding-bottom: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-link {
+  margin: 0;
+  padding-left: .3rem;
 }
 
 .about.image.links.icons {
