@@ -4,6 +4,7 @@ import { Link, Tooltip } from "@mui/material";
 const PublicationCard = (props) => {
   return (
     <div>
+      {/* Div fixes hover area being full width instead of just over text */}
       <div className="projectCard-title">
         <Link href={props.cardData.link}>
           <Tooltip title={props.cardData.link} placement="bottom" arrow>
@@ -17,11 +18,14 @@ const PublicationCard = (props) => {
         <p>
           <i>{props.cardData.location}</i>
         </p>
+        {/* Div fixes hover area being full width instead of just over text */}
+        <div className="projectCard-title">
         <Link href={props.cardData.citationLink}>
           <Tooltip title={props.cardData.citationLink} placement="bottom" arrow>
             <p>Citations: {props.cardData.citationCount}</p>
           </Tooltip>
         </Link>
+        </div>
       </div>
 
       <br />
