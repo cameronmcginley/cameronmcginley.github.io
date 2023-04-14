@@ -118,6 +118,10 @@ p {
   }
 }
 
+.publicationCard-info p {
+  display: table;
+}
+
 .section {
   width: 100%;
   /* background-color: #eee; */

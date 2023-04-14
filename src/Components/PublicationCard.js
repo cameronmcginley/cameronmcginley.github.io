@@ -12,10 +12,18 @@ const PublicationCard = (props) => {
         </Link>
       </div>
 
-      <p>{props.cardData.author}</p>
-      <p>
-        <i>{props.cardData.location}</i>
-      </p>
+      <div className="publicationCard-info">
+        <p>{props.cardData.author}</p>
+        <p>
+          <i>{props.cardData.location}</i>
+        </p>
+        <Link href={props.cardData.citationLink}>
+          <Tooltip title={props.cardData.citationLink} placement="bottom" arrow>
+            <p>Citations: {props.cardData.citationCount}</p>
+          </Tooltip>
+        </Link>
+      </div>
+
       <br />
       <p>
         <b>Abstract</b>
