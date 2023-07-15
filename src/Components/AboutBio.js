@@ -15,7 +15,8 @@ const AboutBio = () => {
         vulnerability detection for the U.S. Department of Defense, buggy Java
         code detection at Purdue University, phishing email detection and
         generating natural language responses at Wichita State University, and
-        working in software test automation on data storage system firmware at NetApp.
+        working in software test automation on data storage system firmware at
+        NetApp.
       </p>
 
       <div className="about bio lists">
@@ -36,6 +37,10 @@ const AboutBio = () => {
         <AboutList
           title="Professional"
           items={[
+            {
+              text: "Capital One",
+              secondary: "Software Engineer Intern (June 2023 - August 2023)",
+            },
             {
               text: "U.S. Department of Defense",
               secondary: "Software Engineer Intern (May 2022 - August 2022)",
