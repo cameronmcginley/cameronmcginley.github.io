@@ -61,9 +61,10 @@ const Projects = () => {
 
       <ProjectCard
         cardData={{
-          title: "WIP: Projectile Points Web Database",
+          title: "Projectile Points Web Database",
           project_link: "http://projectile-points-database.vercel.app/",
-          gh_link: "https://github.com/cameronmcginley/projectile-points-web-database",
+          gh_link:
+            "https://github.com/cameronmcginley/projectile-points-web-database",
           description:
             "Web application that serves as a wikipedia-like database for projectile point (arrowhead) archaeological data. Allows for the creation, updating, and deleting of projectile point pages. Designed to improve on similar existing websites (maintained by universities) by better structuring data and allowing for far greater search and comparison of data, especially by automated means. Built with the Next.js framework on React, using GraphQL and a PostgreSQL database. More detailed stack info found on GitHub or public app.",
           image: "project-projectilepoints-image.png",
