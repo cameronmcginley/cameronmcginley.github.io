@@ -1,8 +1,8 @@
 import React from "react";
 import { List, ListItem, ListItemText, ListItemIcon } from "@mui/material";
 import "../App.css";
-import CircleIcon from "@mui/icons-material/Circle";
 
+// Lists for education and professional sections in bio section
 const AboutList = (props) => {
   return (
     <div className="about list">
@@ -11,11 +11,19 @@ const AboutList = (props) => {
         {props.items &&
           props.items.map((item) => (
             <ListItem key={item.text}>
-              <ListItemIcon sx={{ minWidth: "1.2rem" }}>
-                <CircleIcon sx={{ width: ".4rem", color: "black" }} />
-              </ListItemIcon>
+              {/* Image of company logo */}
+              {item.image && (
+                <ListItemIcon sx={{ minWidth: "3.2rem" }}>
+                  <img
+                    src={"images/companies/" + item.image}
+                    alt={item.text}
+                    style={{ width: "2.8rem" }}
+                  />
+                </ListItemIcon>
+              )}
+              {/* Content */}
               <ListItemText
-                sx={{ m: 0 }}
+                sx={{ m: 0, mb: 1.5 }}
                 primary={item.text}
                 secondary={item.secondary}
               />
