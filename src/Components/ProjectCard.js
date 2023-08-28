@@ -8,18 +8,7 @@ const ProjectCard = (props) => {
     <>
       <div className="projectCard">
         {/* Image */}
-        <Box
-          className="projectCard-image-div"
-          sx={{
-            transform: "translateZ(0)",
-            overflow: "hidden",
-            border: "1px solid black",
-            width: "400%",
-            height: "100%",
-            maxWidth: "20rem",
-            maxHeight: "20rem",
-          }}
-        >
+        <div className="projectCard-image-div">
           <Link href={props.cardData.gh_link}>
             <Box
               className="projectCard-image"
@@ -38,7 +27,7 @@ const ProjectCard = (props) => {
               src={"images/" + props.cardData.image}
             />
           </Link>
-        </Box>
+        </div>
 
         {/* Information */}
         <div className="projectCard-info">
