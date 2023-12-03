@@ -49,7 +49,7 @@ p {
 .projectCard-info {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   /* align-items: left; */
   padding-left: 1rem;
   width: 60%;
@@ -168,7 +168,7 @@ p {
   max-width: 20rem;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
 }
