@@ -9,7 +9,7 @@ import SchoolIcon from "@mui/icons-material/School";
 const AboutImage = () => {
   return (
     <div className="about image">
-      <img src="images/headshot_256x256.webp" className="headshot" alt="Logo" />
+      <img src="images/headshot_384x384.webp" className="headshot" alt="Logo" />
       <h1>Cameron McGinley</h1>
       {/* <p>MS CS at UC San Diego</p> */}
 
