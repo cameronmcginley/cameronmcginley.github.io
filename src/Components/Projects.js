@@ -15,7 +15,7 @@ const Projects = () => {
           gh_link: "https://github.com/cameronmcginley/CourseDashboard/",
           description:
             "This web app serves as a dashboard for courses and attendees. It provides an easy to use back-end for course instructors or administrators to handle course data and attendee data. One primary feature is the course tracker, where instructors can input their courses to automatically generate QR codes. These QR codes allow attendees to sign into courses by scanning them, either via the webpage or a printable page. This tracker also displays a unique page for each course with various helpful info and features. The next main feature is the attendee/sign-in data, where all sign-ins are stored. This data can be exported to .CSV, and comes with wide support for querying data. This project uses Firebase's Cloud Firestore as a database. More information can be found on the linked GitHub.",
-          image: "project-coursesignindashboard-image.png",
+          image: "project-coursesignindashboard-image.webp",
           tools: [
             {
               text: "JavaScript",
@@ -45,7 +45,7 @@ const Projects = () => {
             "https://github.com/cameronmcginley/optimized-brainfk-interpreter",
           description:
             "Interpreter for the brainf**k programming language: a Turing complete language consisting of 8 instructions allowing for manipulation of bytes. This interpreter implements some simple optimizations, such as condensing repetitive instructions, and some more complex optimizations including peephole optimization with pattern matching for common brainf**k algorithms, such as addition or subtraction.",
-          image: "project-brainfk-image.png",
+          image: "project-brainfk-image.webp",
           tools: [
             {
               text: "C++",
@@ -67,7 +67,7 @@ const Projects = () => {
             "https://github.com/cameronmcginley/projectile-points-web-database",
           description:
             "Web application that serves as a wikipedia-like database for projectile point (arrowhead) archaeological data. Allows for the creation, updating, and deleting of projectile point pages. Designed to improve on similar existing websites (maintained by universities) by better structuring data and allowing for far greater search and comparison of data, especially by automated means. Built with the Next.js framework on React, using GraphQL and a PostgreSQL database. More detailed stack info found on GitHub or public app.",
-          image: "project-projectilepoints-image.png",
+          image: "project-projectilepoints-image.webp",
           tools: [
             {
               text: "TypeScript",
@@ -100,7 +100,7 @@ const Projects = () => {
           gh_link: "https://github.com/cameronmcginley/sorting-visualizer/",
           description:
             "React JS application that visualizes various sorting algorithms, such as bubble sort, merge sort, radix sort, and bogo sort. Provides a set of configurations, including delay and array length, and even sound that matches the frequency of sorts!",
-          image: "project-sortingvisualizer-gif.gif",
+          image: "project-sortingvisualizer-webm.webm",
           tools: [
             {
               text: "JavaScript",
@@ -121,7 +121,7 @@ const Projects = () => {
           gh_link: "https://github.com/cameronmcginley/ml-algorithm-testing",
           description:
             "This project aims to output performance metrics and visualizations of various machine learning algorithms against the well-known iris dataset. Currently, it implements scikit-learn's LogisticRegression(), SVC(), and RandomForestClassifier(). The project allows for dynamic additions of new algorithms, by simpling defining them in a yaml file. Optimal hyperparameters are automatically found, and any model defined in the yaml will have its metrics and graph output.",
-          image: "project-mltester-image.png",
+          image: "project-mltester-image.webp",
           tools: [
             {
               text: "Python",
@@ -143,7 +143,7 @@ const Projects = () => {
           gh_link: "https://github.com/cameronmcginley/RBLX-PlacementSystem/",
           description:
             "Tried my hand at Roblox development and built an object placement system. This makes use of raycasting and efficient client-server communications for choosing objects and locations via the client, and building via the server. Uses optimal object design to allow for easy additions of new objects and how they interact with the world (e.g. custom hitboxes). Additionally, it saves placed objects per account. Project built in a Rojo environment to synchronize external codebase into Roblox Studio to allow for Git version control.",
-          image: "project-rblxplacement-gif.gif",
+          image: "project-rblxplacement-webm.webm",
           tools: [
             {
               text: "Lua",

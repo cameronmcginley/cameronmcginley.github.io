@@ -4,11 +4,14 @@ import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 
 const ProjectCard = (props) => {
+  const fileExtension = props.cardData.image.split(".").pop();
+  const isWebm = fileExtension === "webm";
+
   return (
     <>
       <div className="projectCard">
         {/* Image */}
-        <Box
+        {/* <Box
           className="projectCard-image-div"
           sx={{
             transform: "translateZ(0)",
@@ -37,6 +40,57 @@ const ProjectCard = (props) => {
               alt="Project Image"
               src={"images/" + props.cardData.image}
             />
+          </Link>
+        </Box> */}
+        <Box
+          className="projectCard-image-div"
+          sx={{
+            transform: "translateZ(0)",
+            overflow: "hidden",
+            border: "1px solid black",
+            width: "400%",
+            height: "100%",
+            maxWidth: "20rem",
+            maxHeight: "20rem",
+          }}
+        >
+          <Link href={props.cardData.gh_link}>
+            {isWebm ? (
+              <video
+                className="projectCard-image"
+                style={{
+                  display: "block",
+                  width: "100%",
+                  height: "auto",
+                  transition: "0.2s",
+                  "&:hover": {
+                    transform: "scale(1.1)",
+                  },
+                }}
+                alt="Project Video"
+                src={"images/" + props.cardData.image}
+                loop
+                autoPlay
+                muted
+              />
+            ) : (
+              <Box
+                className="projectCard-image"
+                component="img"
+                sx={{
+                  display: "block",
+                  width: "100%",
+                  height: "auto",
+                  transition: "0.2s",
+                  "&:hover": {
+                    transform: "scale(1.1)",
+                    overflow: "hidden",
+                  },
+                }}
+                alt="Project Image"
+                src={"images/" + props.cardData.image}
+              />
+            )}
           </Link>
         </Box>
 
