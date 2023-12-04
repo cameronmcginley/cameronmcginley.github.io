@@ -19,7 +19,7 @@ const AboutImage = () => {
         <Link
           href={process.env.PUBLIC_URL + "/resume.pdf"}
           target="_blank"
-          without
+          without="true"
           rel="noopener noreferrer"
         >
           <PictureAsPdfIcon />
