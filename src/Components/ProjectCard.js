@@ -10,7 +10,7 @@ const ProjectMedia = ({ cardData, isWebm }) => (
       // Render video if the media file is a WebM
       <video
         className="projectCard-image"
-        alt="Project Video"
+        alt={cardData.alt}
         src={`images/${cardData.image}`}
         loop
         autoPlay
@@ -30,7 +30,7 @@ const ProjectMedia = ({ cardData, isWebm }) => (
       <Box
         className="projectCard-image"
         component="img"
-        alt="Project Image"
+        alt={cardData.alt}
         src={`images/${cardData.image}`}
         sx={{
           display: "block",
@@ -54,6 +54,7 @@ const ToolChip = ({ tool }) => (
       color="default"
       size="small"
       label={tool.text}
+      aria-label={tool.text}
       component="a"
       href={tool.link}
       variant="outlined"
@@ -90,6 +91,7 @@ const ProjectCard = ({ cardData }) => {
                 <Chip
                   color="primary"
                   label="GitHub"
+                  aria-label="GitHub"
                   component="a"
                   href={cardData.gh_link}
                   variant="outlined"
@@ -101,6 +103,7 @@ const ProjectCard = ({ cardData }) => {
                   <Chip
                     color="primary"
                     label="Public App"
+                    aria-label="Public App"
                     component="a"
                     href={cardData.project_link}
                     variant="outlined"

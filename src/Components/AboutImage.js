@@ -27,12 +27,18 @@ const AboutImage = () => {
           without="true"
           rel="noopener noreferrer"
           aria-label="Resume"
+          // 5 px margin bottom
+          sx={{ mb: 0.5 }}
         >
           <PictureAsPdfIcon />
           <p className="icon-link">Resume</p>
         </Link>
 
-        <Link href="https://github.com/cameronmcginley" aria-label="GitHub">
+        <Link
+          href="https://github.com/cameronmcginley"
+          aria-label="GitHub"
+          sx={{ mb: 0.5 }}
+        >
           <GitHubIcon />
           <p className="icon-link">GitHub</p>
         </Link>
@@ -40,6 +46,7 @@ const AboutImage = () => {
         <Link
           href="https://www.linkedin.com/in/cameronmcginley/"
           aria-label="LinkedIn"
+          sx={{ mb: 0.5 }}
         >
           <LinkedInIcon />
           <p className="icon-link">LinkedIn</p>
@@ -48,6 +55,7 @@ const AboutImage = () => {
         <Link
           href="https://scholar.google.com/citations?user=3AUzp3MAAAAJ&hl=en"
           aria-label="Google Scholar"
+          sx={{ mb: 0.5 }}
         >
           <SchoolIcon />
           <p className="icon-link">Google Scholar</p>
