@@ -7,10 +7,13 @@ const AboutList = (props) => {
   return (
     <div className="about list">
       <h3>{props.title}</h3>
+
+      {/* Build list */}
       <List className="list2">
+        {/* Check existence then map to list */}
         {props.items &&
-          props.items.map((item) => (
-            <ListItem key={item.text}>
+          props.items.map((item, index) => (
+            <ListItem key={index}>
               {/* Image of company logo */}
               {item.image && (
                 <ListItemIcon sx={{ minWidth: "3.2rem" }}>
@@ -18,9 +21,11 @@ const AboutList = (props) => {
                     src={"images/companies/" + item.image}
                     alt={item.text}
                     style={{ width: "2.8rem" }}
+                    loading="lazy"
                   />
                 </ListItemIcon>
               )}
+
               {/* Content */}
               <ListItemText
                 sx={{ m: 0, mb: 1.5 }}

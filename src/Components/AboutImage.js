@@ -9,34 +9,46 @@ import SchoolIcon from "@mui/icons-material/School";
 const AboutImage = () => {
   return (
     <div className="about image">
-      <img src="images/headshot_384x384.webp" className="headshot" alt="Logo" />
+      {/* Headshot */}
+      <img
+        src="images/headshot_384x384.webp"
+        className="headshot"
+        alt="Headshot of Cameron McGinley"
+        loading="lazy"
+      />
       <h1>Cameron McGinley</h1>
-      {/* <p>MS CS at UC San Diego</p> */}
-
       <p>camcginley@ucsd.edu</p>
 
+      {/* Links to resume and social media */}
       <div className="about image links">
         <Link
           href={process.env.PUBLIC_URL + "/resume.pdf"}
           target="_blank"
           without="true"
           rel="noopener noreferrer"
+          aria-label="Resume"
         >
           <PictureAsPdfIcon />
           <p className="icon-link">Resume</p>
         </Link>
 
-        <Link href="https://github.com/cameronmcginley">
+        <Link href="https://github.com/cameronmcginley" aria-label="GitHub">
           <GitHubIcon />
           <p className="icon-link">GitHub</p>
         </Link>
 
-        <Link href="https://www.linkedin.com/in/cameronmcginley/">
+        <Link
+          href="https://www.linkedin.com/in/cameronmcginley/"
+          aria-label="LinkedIn"
+        >
           <LinkedInIcon />
           <p className="icon-link">LinkedIn</p>
         </Link>
 
-        <Link href="https://scholar.google.com/citations?user=3AUzp3MAAAAJ&hl=en">
+        <Link
+          href="https://scholar.google.com/citations?user=3AUzp3MAAAAJ&hl=en"
+          aria-label="Google Scholar"
+        >
           <SchoolIcon />
           <p className="icon-link">Google Scholar</p>
         </Link>

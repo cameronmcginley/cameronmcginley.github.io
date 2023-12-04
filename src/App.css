@@ -95,7 +95,7 @@ p {
   margin: 0;
 }
 
-.projectCard-image-div { 
+.projectCard-image-div {
   display: flex;
   transform: translateZ(0);
   overflow: hidden;
